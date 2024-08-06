@@ -1,5 +1,8 @@
 package com.example.form;
 
+/**
+ * 管理者登録画面のフォームクラス.
+ */
 public class InsertAdministratorForm {
 
     private String name;
