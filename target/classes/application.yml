@@ -1,8 +1,0 @@
-spring:
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/ex
-    username: postgres
-    password: postgres
-  application: 
-    name: ex-emp-managements
