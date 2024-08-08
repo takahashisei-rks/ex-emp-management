@@ -1,16 +1,10 @@
 package com.example.form;
 
-/**
- * ログイン時に使用するフォーム.
- */
 public class LoginForm {
-    /** メールアドレス */
     private String mailAddress;
-
-    /** パスワード */
     private String password;
 
-    // Getter and Setter methods
+    // Getters and Setters
     public String getMailAddress() {
         return mailAddress;
     }
@@ -25,13 +19,5 @@ public class LoginForm {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    @Override
-    public String toString() {
-        return "LoginForm{" +
-                "mailAddress='" + mailAddress + '\'' +
-                ", password='" + password + '\'' +
-                '}';
     }
 }
