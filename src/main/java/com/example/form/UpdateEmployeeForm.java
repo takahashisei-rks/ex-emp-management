@@ -6,31 +6,26 @@ package com.example.form;
 public class UpdateEmployeeForm {
 
     /** 従業員ID */
-    private String id;
+    private Integer id;
 
     /** 扶養人数 */
-    private String dependentsCount;
+    private Integer dependentsCount;
 
     // getterとsetterの自動生成
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public String getDependentsCount() {
+    public Integer getDependentsCount() {
         return dependentsCount;
     }
 
-    public void setDependentsCount(String dependentsCount) {
+    public void setDependentsCount(Integer dependentsCount) {
         this.dependentsCount = dependentsCount;
     }
 
-    // toStringメソッドの自動生成
-    @Override
-    public String toString() {
-        return "UpdateEmployeeForm [id=" + id + ", dependentsCount=" + dependentsCount + "]";
-    }
 }

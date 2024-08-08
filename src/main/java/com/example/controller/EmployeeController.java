@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.domain.Employee;
+import com.example.form.UpdateEmployeeForm;
 import com.example.service.EmployeeService;
 
 /**
@@ -28,7 +29,7 @@ public class EmployeeController {
      * @return 詳細ページのテンプレート名
      */
     @GetMapping("/showDetail")
-    public String showDetail(@RequestParam("id") String id, Model model) {
+    public String showDetail(@RequestParam("id") String id, Model model, UpdateEmployeeForm form) {
         Integer employeeId = Integer.parseInt(id);
         Employee employee = employeeService.showDetail(employeeId);
         model.addAttribute("employee", employee);

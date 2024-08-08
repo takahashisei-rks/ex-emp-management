@@ -53,7 +53,7 @@
                   </tr>
                   <tr>
                     <th nowrap>写真</th>
-                    <td><img th:src="@{/img/{employee.image}(employee.image)}" alt="従業員写真" /></td>
+                    <td><img th:src="@{'/img/' + ${employee.image}}" alt="従業員写真"/></td>
                   </tr>
                   <tr>
                     <th nowrap>性別</th>
