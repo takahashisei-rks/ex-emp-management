@@ -20,6 +20,16 @@ public class EmployeeService {
     private EmployeeRepository employeeRepository;
 
     /**
+     * 従業員の詳細情報を取得するメソッド
+     * 
+     * @param id 従業員ID
+     * @return 従業員情報
+     */
+    public Employee showDetail(Integer id) {
+        return employeeRepository.load(id);
+    }
+
+    /**
      * 全従業員情報を取得する.
      * 
      * @return 従業員一覧
