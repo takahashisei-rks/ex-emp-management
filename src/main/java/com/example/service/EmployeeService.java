@@ -37,4 +37,13 @@ public class EmployeeService {
     public List<Employee> showList() {
         return employeeRepository.findAll();
     }
+
+    /**
+     * 従業員情報を更新するメソッド
+     * 
+     * @param employee 従業員情報
+     */
+    public void update(Employee employee) {
+        employeeRepository.update(employee);
+    }
 }
