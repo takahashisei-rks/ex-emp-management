@@ -37,6 +37,12 @@ public class EmployeeController {
         return "employee/detail";
     }
 
+    /**
+     * 扶養人数更新処理
+     * 
+     * @param form 画面入力
+     * @return 従業員一覧画面にリダイレクト
+     */
     @PostMapping("/update")
     public String update(UpdateEmployeeForm form) {
         // IDで従業員情報を検索
