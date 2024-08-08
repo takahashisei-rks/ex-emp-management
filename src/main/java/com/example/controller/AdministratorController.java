@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+/**
+ * 管理者機能のControllerクラス
+ */
 @Controller
 @RequestMapping("/")
 public class AdministratorController {
@@ -21,6 +24,12 @@ public class AdministratorController {
         return "administrator/insert";
     }
 
+    /**
+     * Administratorテーブルにデータを登録する処理
+     * 
+     * @param form 画面からのデータ入力
+     * @return リダイレクト
+     */
     @PostMapping("/insert")
     public String insert(InsertAdministratorForm form) {
         Administrator administrator = new Administrator();
