@@ -2,6 +2,7 @@ package com.example.controller;
 
 import com.example.service.AdministratorService;
 import com.example.form.InsertAdministratorForm;
+import com.example.form.LoginForm;
 import com.example.domain.Administrator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,6 +19,17 @@ public class AdministratorController {
 
     @Autowired
     private AdministratorService administratorService;
+
+    /**
+     * ログイン画面を表示します.
+     * 
+     * @param form ログインフォーム
+     * @return ログイン画面のテンプレート名
+     */
+    @GetMapping("/")
+    public String toLogin(LoginForm form) {
+        return "administrator/login";
+    }
 
     @GetMapping("/toInsert")
     public String toInsert(InsertAdministratorForm form) {
