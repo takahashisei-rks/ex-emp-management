@@ -76,4 +76,18 @@ public class AdministratorController {
         administratorService.insert(administrator);
         return "redirect:/";
     }
+
+    /**
+     * ログアウト処理を行うメソッド.
+     * 
+     * @param session セッション情報
+     * @return ログイン画面へリダイレクト
+     */
+    @GetMapping("/logout")
+    public String logout(HttpSession session) {
+        // セッション情報を無効にする
+        session.invalidate();
+        // ログイン画面へリダイレクト
+        return "redirect:/";
+    }
 }

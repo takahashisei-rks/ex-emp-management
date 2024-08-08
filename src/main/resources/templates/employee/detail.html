@@ -30,9 +30,10 @@
               <li class="active"><a href="#" th:href="@{/employee/showList}">従業員管理</a></li>
             </ul>
             <p class="navbar-text navbar-right">
-              <span th:text="${session.administratorName + 'さん'}">山田さん</span>こんにちは！ &nbsp;&nbsp;&nbsp;
+              <span th:text="${session.administratorName + 'さん'}">山田さん</span>こんにちは！ 
+              &nbsp;&nbsp;&nbsp;
               <a href="#" th:href="@{/logout}" class="navbar-link">ログアウト</a>
-            </p>
+          </p>
           </div>
         </div>
       </nav>
