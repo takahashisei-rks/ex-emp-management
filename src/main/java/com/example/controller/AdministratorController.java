@@ -27,6 +27,13 @@ public class AdministratorController {
     @Autowired
     private HttpSession session;
 
+    /**
+     * ログイン処理
+     * 
+     * @param form  ログインフォーム
+     * @param model モデル
+     * @return 次のページへ遷移
+     */
     @PostMapping("/login")
     public String login(LoginForm form, Model model) {
         Administrator administrator = administratorService.login(form.getMailAddress(), form.getPassword());
