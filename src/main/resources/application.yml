@@ -3,6 +3,6 @@ spring:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/ex
     username: postgres
-    password: postgres
+    password: gundam0083
   application: 
     name: ex-emp-managements
